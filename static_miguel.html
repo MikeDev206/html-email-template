@@ -1,0 +1,490 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="//db.onlinewebfonts.com/c/adec4d42fc6c6391a3b0f391c45f7a64?family=Beatrice" rel="stylesheet"
+			type="text/css" />
+		<title>The Resy Lineup</title>
+
+		<style type="text/css">
+			/* general styles */
+			body {
+				box-sizing: border-box;
+				margin: 0;
+				background-color: #fffff5;
+			}
+
+			table {
+				border-spacing: 0;
+			}
+
+			td {
+				padding: 0;
+			}
+
+			img {
+				border: 0;
+			}
+
+			.wrapper {
+				width: 100%;
+				table-layout: fixed;
+				background-color: #fffff5;
+				padding-bottom: 60px;
+			}
+
+			.main {
+				margin: 0 auto;
+				width: 100%;
+				max-width: 600px;
+				border-spacing: 0;
+			}
+
+			/* hero section */
+
+			.hero-bg {
+				background-color: #FD553F;
+				color: #ffffff;
+				padding: 1.45% 28.17% 1% 10.83%;
+			}
+
+			.hero-bg h1 {
+				font-family: Beatrice;
+				font-size: 74px;
+				letter-spacing: -0.37px;
+				line-height: 80px;
+				width: 366px;
+				text-align: left;
+			}
+
+			.hero-bg p {
+				font-family: Bookmania;
+				font-size: 49px;
+				letter-spacing: -0.9px;
+				line-height: 30px;
+				width: 235px;
+				text-align: left;
+			}
+
+			.hero-bg img {
+				padding: 80px 0 35px 0;
+				width: 248px;
+				height: 42px;
+			}
+
+			/* Welcome */
+			.welcome {
+				width: 100%;
+				padding: 10%;
+			}
+
+			.welcome p {
+				color: #58585C;
+				font-family: Helvetica;
+				font-size: 24px;
+				letter-spacing: -0.1px;
+				line-height: 36px;
+				width: 480px;
+				max-width: 100%;
+				text-align: left;
+			}
+
+			/* FOOD AND DRINKS */
+
+			.cartoons {
+				width: 100%;
+				max-width: 600px;
+				border-top: 1px solid #FF341A;
+				border-bottom: 1px solid #FF341A;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+			}
+
+			.cartoons h1 {
+				color: #FF462D;
+				font-family: Beatrice;
+				font-size: 40px;
+				letter-spacing: -0.16px;
+				line-height: 36px;
+				width: 100%;
+				font-weight: bolder;
+				border-bottom: 1px solid #FF341A;
+				padding-bottom: 20px;
+			}
+
+			.cartoons img {
+				width: 366px;
+				height: 262px;
+				max-width: 100%;
+			}
+
+			/* RESTAURANT RECOMMENDATION */
+
+			.cards {
+				background-color: #fff;
+				border-top: 1px solid #FF341A;
+				box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.12);
+				width: 540px;
+				height: 300px;
+			}
+
+			.cards h3 {
+				color: #FF462D;
+				font-family: Helvetica;
+				font-size: 26px;
+				max-width: 100%;
+				text-align: left;
+				padding: 0 10%;
+			}
+
+			.cards p {
+				color: #58595C;
+				font-family: Helvetica;
+				font-size: 24px;
+				line-height: 32px;
+				max-width: 100%;
+				text-align: left;
+				padding: 0 10%;
+			}
+
+			.cards button {
+				font-weight: bolder;
+				background-color: #336DDE;
+				border: 1px solid transparent;
+				border-radius: 5px;
+				width: 160px;
+				height: 50px;
+				color: #fff;
+				margin: 0 10% 10% 10%;
+				cursor: pointer;
+			}
+
+			/* THE DRINK PROPOSAL, THE SPLURGE, STAY AT HOME & WEEKEND */
+			/* (REUSED STYLES FROM "CARDS CLASS") */
+
+			/* HONORABLE MENTIONS */
+
+
+			/* THE EVENT INVITE */
+
+			.events {
+				background-color: rgba(170, 220, 220, 0.32);
+				width: 100%;
+				height: auto;
+				display: flex;
+				align-items: center;
+				justify-content: center
+			}
+
+			.event-img {
+				padding-left: 10%;
+				flex-basis: 40%;
+			}
+
+			.event-img img {
+				width: 177px;
+				height: 239px;
+				max-width: 100%;
+			}
+
+			.event-text {
+				text-align: left;
+				width: 50%;
+				height: auto;
+				padding: 5% 5% 5% 0;
+			}
+
+			.event-text h3 {
+				color: #FF462D;
+				font-family: Helvetica;
+				font-size: 26px;
+			}
+
+
+			.event-text p {
+				color: #58595C;
+				font-family: Helvetica;
+				font-size: 20px;
+				line-height: 32px;
+				text-align: left;
+			}
+
+			.event-text a {
+				color: #336DDE;
+				font-family: Helvetica;
+				font-size: 24px;
+				font-weight: bolder;
+				line-height: 32px;
+				text-align: left;
+				text-decoration: none;
+				cursor: pointer;
+			}
+
+			/* AMEX BANNER */
+
+			.amex-banner-section {
+				margin: 2rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.amex-banner {
+				background-color: #686868;
+				width: 600px;
+				height: auto;
+				padding: 5%;
+			}
+
+			.amex-banner img {
+				width: 540px;
+				height: auto;
+			}
+
+			/* RESY APP */
+
+			.resy-app {
+				border: 2px solid #FF553E;
+				width: 600px;
+				height: 301px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin: 2em;
+			}
+
+			.resy-text {
+				text-align: left;
+				width: 50%;
+				height: auto;
+				padding: 5% 0% 5% 5%;
+			}
+
+			.resy-text h2 {
+				color: #FF553E;
+				font-family: Beatrice;
+				font-size: 32px;
+				letter-spacing: -1px;
+				line-height: 37px;
+				width: 233px;
+				text-align: left;
+			}
+
+			.resy-text p {
+				color: #7D7D7D;
+				font-family: GTAmerica;
+				font-size: 20px;
+				letter-spacing: -0.2px;
+				line-height: 26px;
+				width: 239px;
+				text-align: left;
+			}
+
+			.resy-text a {
+				text-decoration: none;
+				padding: 1px;
+			}
+
+			.resy-scoring-guy {
+				padding-left: 10%;
+				flex-basis: 40%;
+			}
+
+			.resy-scoring-guy img {
+				width: 253px;
+				height: 241px;
+				max-width: 100%;
+			}
+		</style>
+
+	</head>
+
+	<body>
+
+		<center class="wrapper">
+			<table class="main">
+
+				<!-- FIRST SECTION RED-ONE -->
+				<tr>
+					<td class="hero-bg">
+						<h1>The Resy Lineup</h1>
+						<p>New York</p>
+						<img src="./img/Resy-Lockup-Box-White@3x Copy.png" alt="resy-hero">
+					</td>
+				</tr>
+
+				<!-- WELCOME SECTION -->
+
+				<tr>
+					<td class="welcome">
+						<p>Welcome to the <strong>Resy Lineup</strong>, your weekly dose of recommendations on what to eat, drink
+							and see.
+							In this week's edition: a tavern with an improbable wine list, a farewell to a proper New York standbym
+							and a food
+							crawl through Chinatown.</p>
+					</td>
+				</tr>
+
+				<!-- FOOD AND DRINKS -->
+
+				<tr>
+					<td class="cartoons">
+						<h1>What to Eat & Drink</h1>
+						<img src="/img/marie off white revised.png" alt="marie">
+					</td>
+				</tr>
+
+				<!-- RESTAURANT RECOMMENDATION -->
+
+				<tr>
+					<td class="cards">
+						<h3>
+							The Restaurant recommendation
+						</h3>
+						<p>Chaiwali, because after a two-year rennovation, Harlem's excellent Indian restaurant has reopened - and
+							the butter chicken is among the best takes the city has ever known.</p>
+						<button>Book Now</button>
+					</td>
+				</tr>
+
+				<!-- HONORABLE MENTIONS -->
+
+
+
+				<!-- THE DRINK PROPOSAL -->
+
+				<tr>
+					<td class="cards">
+						<h3>
+							The Drink Proposal
+						</h3>
+						<p>A bottle of Château Moulin de Tricot Margaux from Red Hook Tavern. The old-school Bordeaux is one of the
+							many stellar offerings from the Tavern’s thoughtful wine program.</p>
+						<button>Cheers!</button>
+					</td>
+				</tr>
+
+				<!-- THE SPLURGE -->
+
+				<tr>
+					<td class="cards">
+						<h3>
+							The Splurge
+						</h3>
+						<p>Chaiwali, because after a two-year rennovation, Harlem's excellent Indian restaurant has reopened - and
+							the butter chicken is among the best takes the city has ever known.</p>
+						<button>Let's Get Fancy</button>
+					</td>
+				</tr>
+
+				<!-- WHAT TO SEE AND DO  -->
+
+				<tr>
+					<td class="cartoons">
+						<h1>What to See & Do</h1>
+						<img src="/img/Restaurant-Storefront.png" alt="rest-front">
+					</td>
+				</tr>
+
+				<!-- STAY AT HOME MOVE -->
+
+				<tr>
+					<td class="cards">
+						<h3>
+							The Stay-At-Home Move
+						</h3>
+						<p>It’s movie night and you’ve got your go-to pizza joint on speed dial, but why not try Lebanon’s spin on
+							the pie? In the
+							East Village, Balade kneads fresh dough for its manakeesh — a bready, chewy 8-inch disc topped with
+							goodness (get the
+							wild zaatar or the lahme baajin).</p>
+						<button>Order Now</button>
+					</td>
+				</tr>
+
+				<!-- EVENT INVITE -->
+
+				<tr class="events">
+					<td class="event-img">
+						<img src="/img/Oui-Chef.png" alt="oui-cheg">
+					</td>
+					<td class="event-text">
+						<h3>
+							The Event Invite
+						</h3>
+						<p>Thursday, August 27 marks the end of <strong>Bar Sardine</strong>, and you’re invited to bid adieu to
+							this corner fixture
+							the only way
+							you should: with a platter of oysters, a round (or two) of cocktails, and your last Fedora burger.
+						</p>
+						<a href="#">Book Now</a>
+					</td>
+				</tr>
+
+				<!-- THE WEEKEND PAIRING -->
+
+				<tr>
+					<td class="cards">
+						<h3>
+							The Weekend Pairing
+						</h3>
+						<p>There’s no better activity for a sunny weekend than food crawling in Chinatown. The last stretch of Mott
+							Street has been
+							closed for outdoor dining, meaning you can sample your way through dim sum, soup dumplings, and stir-fried
+							lobster,
+							among other tasty things.</p>
+						<button>Dumplings Await</button>
+					</td>
+				</tr>
+
+				<!-- AMEX BANNER -->
+
+				<tr class="amex-banner-section">
+					<td class="amex-banner">
+						<img src="/img/AMEX banner.png" alt="amex-banner">
+					</td>
+				</tr>
+
+				<!-- RESY APP -->
+
+				<tr class="resy-app">
+					<td class="resy-text">
+						<h2>
+							Don't have the Resy App?
+						</h2>
+						<p>Get instant access to the best restaurants.</p>
+						<a href="#">
+							<img src="/img/appstore.png" alt="link-appstore">
+						</a>
+						<a href="#">
+							<img src="/img/playstore.png" alt="link-playstore">
+						</a>
+					</td>
+					<td class="resy-scoring-guy">
+						<img src="/img/scoring-hard.png" alt="scoring-hard">
+					</td>
+				</tr>
+
+
+				<!-- FOLLOW ALONG -->
+
+				<!-- FOOTER -->
+
+
+			</table>
+
+		</center>
+
+
+
+
+	</body>
+
+</html>
